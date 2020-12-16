@@ -21,7 +21,7 @@ class freq {
     }
 
     public static void main(String args[]) {
-        int arr[] = { 10, 10, 20, 30, 30, 30 }, n = 6;
+        int arr[] = { 10, 20, 20, 30, 30, 30 }, n = 6;
 
         printFreq(arr, n);
 
