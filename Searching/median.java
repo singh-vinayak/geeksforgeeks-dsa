@@ -1,3 +1,4 @@
+//time complexity- o(log n1)
 import java.util.*;
 import java.io.*;
 import java.lang.*;
