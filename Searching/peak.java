@@ -24,7 +24,7 @@ class peak {
 
     public static void main(String args[]) {
 
-        int arr[] = { 5, 20, 40, 30, 20, 50, 60 }, n = 7;
+        int arr[] = { 1,2,3}, n = 3;
 
         System.out.println(getPeak(arr, n));
 

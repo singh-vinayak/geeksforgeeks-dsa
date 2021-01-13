@@ -1,4 +1,4 @@
-//o(log in) time, space o(1)
+//o(log n) time, space o(1)
 import java.util.*;
 import java.io.*;
 import java.lang.*;
