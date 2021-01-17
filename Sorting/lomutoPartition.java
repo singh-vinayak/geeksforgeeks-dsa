@@ -1,4 +1,5 @@
 //better way to create partitions in o(n) time and o(1) space complexity
+//Lomuto Partition
 import java.util.*;
 import java.lang.*;
 import java.io.*;
