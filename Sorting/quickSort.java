@@ -1,15 +1,14 @@
-//better way to create partitions in o(n) time and o(1) space complexity
-//Lomuto Partition( unstable though)
+//quick sort Lomuto partition method
 import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class lomutoPartition {
+class quickSort {
     public static void main(String[] args) {
-        int arr[] = new int[] { 10, 80, 30, 90, 40, 50, 70 };
+        int arr[] = new int[] { 8, 4, 7, 9, 3, 10, 5 };
 
         int n = arr.length;
-        iPartition(arr, 0, n - 1);
+        qSort(arr, 0, n - 1);
 
         for (int x : arr)
             System.out.print(x + " ");
@@ -31,5 +30,13 @@ class lomutoPartition {
         arr[i + 1] = arr[h];
         arr[h] = temp;
         return i + 1;
+    }
+
+    static void qSort(int arr[], int l, int h) {
+        if (l < h) {
+            int p = iPartition(arr, l, h);
+            qSort(arr, l, p - 1);
+            qSort(arr, p + 1, h);
+        }
     }
 }
