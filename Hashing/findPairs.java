@@ -13,11 +13,11 @@ class findPairs {
 
     static int pairWithSumX(int arr[], int n, int X) {
         HashSet<Integer> us = new HashSet<>();
-        for (int i = 0; i < n; i++) {
-            if (us.contains(X - arr[i]))
+        for (int x:arr) {
+            if (us.contains(X-x))
                 return 1;
 
-            us.add(arr[i]);
+            us.add(x);
         }
         return 0;
 
