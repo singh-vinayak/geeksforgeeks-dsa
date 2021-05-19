@@ -54,7 +54,7 @@ class leftmostRecurring {
 
 
 
- //right to left
+ //right to left in a single traversal
  
  /**
   * 
