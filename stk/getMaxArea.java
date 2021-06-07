@@ -1,4 +1,4 @@
-//get maximum area of rectangle in a histogram
+/**get maximum area of rectangle in a histogram */
 
 //naive solution
 //n^2
@@ -66,6 +66,10 @@ class getMaxArea {
             s.push(i);
         }
 
+        for(int i=0;i<n;i++)
+            System.out.print(ps[i]+" ");
+        System.out.println();
+
         while (s.isEmpty() == false) {
             s.pop();
         }
@@ -79,6 +83,10 @@ class getMaxArea {
             ns[i] = nse;
             s.add(i);
         }
+
+        for (int i = 0; i < n; i++)
+            System.out.print(ns[i] + " ");
+        System.out.println();
 
         for (int i = 0; i < n; i++) {
             int curr = arr[i];
