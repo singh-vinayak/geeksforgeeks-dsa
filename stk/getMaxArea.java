@@ -41,7 +41,7 @@
 
 
 //better solution - o(n)
-//based on staockSpan, prevSmaller,nextSmaller... (derivations of greater)
+//based on stockSpan, prevSmaller,nextSmaller... (derivations of greater)
 
 //import java.io.*;
 import java.util.*;
