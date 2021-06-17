@@ -5,7 +5,7 @@
    child and a pointer to right child */
 import java.util.*;
 
-public class Node {
+class Node {
     int data;
     Node left, right;
 
