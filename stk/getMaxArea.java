@@ -1,3 +1,4 @@
+package stk;
 /**get maximum area of rectangle in a histogram */
 
 //naive solution

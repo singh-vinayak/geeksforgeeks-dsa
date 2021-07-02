@@ -1,8 +1,9 @@
+package stk;
 //not using auxillary space.
 
 
 //considering all values in a stack ( both +ve and -ve)
-import java.io.*;
+//import java.io.*;
 import java.util.*;
 
 class MyStack {

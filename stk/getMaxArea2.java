@@ -1,6 +1,7 @@
+package stk;
 //efficient approach
 
-import java.io.*;
+//import java.io.*;
 import java.util.*;
 
 class getMaxArea2 {
