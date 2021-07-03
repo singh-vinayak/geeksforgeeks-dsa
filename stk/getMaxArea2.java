@@ -1,4 +1,3 @@
-package stk;
 //efficient approach
 
 //import java.io.*;

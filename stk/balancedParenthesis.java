@@ -1,4 +1,4 @@
-package stk;
+
 //program to check if the parenthesis are balanced or not
 //import java.io.*;
 import java.util.*;

@@ -1,4 +1,3 @@
-package Heap;
 class insertion {
 
     public static class MinHeap {

@@ -1,4 +1,4 @@
-package stk;
+
 //design a stack that supports getMin function in o(1) time complexity..
 
 //here, we use another stack. therefore, requiring o(n) auxillary space

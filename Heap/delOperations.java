@@ -1,11 +1,12 @@
-//heapify and extract
-//fix the heap at the only one occurence in the entire heapn data structure
-//extract the min of the heap
-// import java.util.*;
-// import java.io.*;
-// import java.lang.*;
 
-class fixHeap {
+//decrease key operation(original to be replaced, new value to be added)
+//delete operation - delete existing value in the binary min heap
+//perform heapify operations then
+import java.util.*;
+import java.io.*;
+import java.lang.*;
+
+class delOperations {
 
     public static class MinHeap {
         int arr[];
@@ -76,15 +77,33 @@ class fixHeap {
             return arr[size];
         }
 
+        void decreaseKey(int i, int x) {
+            arr[i] = x;
+            while (i != 0 && arr[parent(i)] > arr[i]) {
+                int temp = arr[i];
+                arr[i] = arr[parent(i)];
+                arr[parent(i)] = temp;
+                i = parent(i);
+            }
+        }
+
+        void deleteKey(int i) {
+            decreaseKey(i, Integer.MIN_VALUE);
+            extractMin();
+        }
+
     }
 
     public static void main(String args[]) {
         MinHeap h = new MinHeap(11);
         h.insert(3);
         h.insert(2);
+        h.deleteKey(0);
         h.insert(15);
         h.insert(20);
-        System.out.print(h.extractMin());
+        System.out.println(h.extractMin());
+        h.decreaseKey(2, 1);
+        System.out.println(h.extractMin());
     }
 
 }
