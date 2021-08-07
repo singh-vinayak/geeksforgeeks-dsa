@@ -42,7 +42,8 @@ class median
 	public static void main(String args[]) 
     {
 
-		int a1[] = {10, 20, 30, 40, 50}, n1 = 5, a2[] = {5, 15, 25, 35, 45}, n2 = 5;
+		//int a1[] = {10, 20, 30, 40, 50}, n1 = 5, a2[] = {5, 15, 25, 35, 45}, n2 = 5;
+		int a1[] = {1,2}, n1 = 2, a2[] = {3,4}, n2 = 2;
 		
         System.out.println(getMed(a1, a2, n1, n2));
 
