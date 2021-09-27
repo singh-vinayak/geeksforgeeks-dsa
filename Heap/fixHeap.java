@@ -1,5 +1,5 @@
 //heapify and extract
-//fix the heap at the only one occurence in the entire heapn data structure
+//fix the heap at the only one occurence in the entire heap data structure
 //extract the min of the heap
 // import java.util.*;
 // import java.io.*;

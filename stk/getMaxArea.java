@@ -85,9 +85,9 @@ class getMaxArea {
             s.add(i);
         }
 
-        for (int i = 0; i < n; i++)
-            System.out.print(ns[i] + " ");
-        System.out.println();
+        // for (int i = 0; i < n; i++)
+        //     System.out.print(ns[i] + " ");
+        // System.out.println();
 
         for (int i = 0; i < n; i++) {
             int curr = arr[i];
@@ -101,7 +101,7 @@ class getMaxArea {
 
     public static void main(String[] args) {
 
-        int[] arr = new int[] { 6, 2, 5, 4, 1, 5, 6 };
+        int[] arr = new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 };
 
         System.out.print("Maximum Area: " + getMaximumArea(arr, arr.length));
 

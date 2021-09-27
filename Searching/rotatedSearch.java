@@ -7,7 +7,7 @@ import java.lang.*;
 
 class rotatedSearch 
 { 
-
+	/**
 	static int search(int arr[], int n, int x)
 	{
 		int low = 0, high = n - 1;
@@ -37,15 +37,34 @@ class rotatedSearch
 
 		return -1;
 	}
-
+	*/
+	static int search(int[] nums, int target) {
+        int rotIndex=0,i=nums.length-2;
+        while(i>=0 && nums[i]<nums[i+1])
+            i--;
+        rotIndex=i+1;
+        if(target>=nums[rotIndex] && target<=nums[nums.length-1])
+        {
+            for(i=rotIndex;i<nums.length;i++)
+                if(target==nums[i])
+                    return i;
+        }
+        else
+        {
+            for(i=0;i<rotIndex;i++)
+                if(target==nums[i])
+                    return i;
+        }
+        return -1;
+    }
 	public static void main(String args[]) 
     {
 
-		int arr[] = {10, 20, 40, 60, 5, 8}, n = 6;
+		int arr[] = {10, 20, 40, 60, 5, 8};
 
 		int x = 5;
 
-        System.out.println(search(arr, n, x));
+        System.out.println(search(arr, x));
 
     } 
 

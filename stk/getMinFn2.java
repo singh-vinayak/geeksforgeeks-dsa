@@ -1,4 +1,4 @@
-package stk;
+
 //not using auxillary space.
 
 
